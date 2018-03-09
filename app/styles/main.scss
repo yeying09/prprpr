@@ -1,0 +1,44 @@
+// bower:scss
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.transform-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  background-color: #18e0cd;
+  color: #fff;
+
+  &.start-animation {
+    animation-name: addAffect;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 4;
+  }
+}
+
+@keyframes addAffect {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  70% {
+    transform: matrix(0.565685, 0.565685, -0.565685, 0.565685, 5.65685, 28.2843);
+  }
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
