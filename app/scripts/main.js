@@ -29,7 +29,7 @@ var aRST = aR*aS,
 
 $('#transform-box1').css('transform', 'matrix(' + aRST + ',' + bRST + ','+ cRST + ',' + dRST + ','+ eRST + ',' + fRST + ')');
 
-$('#transform-box2').css('transform', 'rotate(45deg) scale(0.8) translate(30px, 20px)');
+$('#transform-box2').css('transform', 'skewX(30deg)');
 
 console.log(getComputedStyle($('#transform-box1')[0]).transform)
 console.log(getComputedStyle($('#transform-box2')[0]).transform)
